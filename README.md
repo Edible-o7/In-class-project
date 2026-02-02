@@ -6,4 +6,4 @@ building computers themselves, and I was introduced to Java programming in one o
 
 I am very interested in using what I learn in this class to create other web apps. I have little experience with this sort of thing, but I am facinated by the process of developing and applying the knowledge I will gain in this class. I think its pretty cool to see more complicated uses of html and css to develop apps for practical use. It would also be nice to get some hands on experience for this type of programming instead of working on fundamental problems in a textbook. 
 
-![Picture of me and my dog](/Images/IMG_0391.HEIC)
+![Picture of me and my dog](/Images/Me%20and%20Codee.jpg)
