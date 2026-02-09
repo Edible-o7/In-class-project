@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - HVZ at SUNY New Paltz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🧟 HVZ</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+                <li><a href="survival.html">Survival Guide</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Register for HVZ</h1>
+        <p>Prepare to enter the arena. The apocalypse awaits.</p>
+    </header>
+
+    <section class="register-section">
+        <div class="container">
+            <div class="register-form-wrapper">
+                <form class="hvz-form">
+                    <fieldset>
+                        <legend>Player Information</legend>
+
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required 
+                                   placeholder="Your survivor name" minlength="3" maxlength="20">
+                            <small>3-20 characters, no spaces</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required 
+                                   placeholder="your.email@newpaltz.edu">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" required 
+                                   placeholder="Your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="year">Class Year:</label>
+                            <select id="year" name="year" required>
+                                <option value="">Select your year</option>
+                                <option value="freshman">Freshman</option>
+                                <option value="sophomore">Sophomore</option>
+                                <option value="junior">Junior</option>
+                                <option value="senior">Senior</option>
+                                <option value="grad">Graduate</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="major">Major:</label>
+                            <input type="text" id="major" name="major" 
+                                   placeholder="Your major (optional)">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Game Preferences</legend>
+
+                        <div class="form-group">
+                            <label for="experience">HVZ Experience:</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Select option</option>
+                                <option value="first-time">First Time Player</option>
+                                <option value="played-once">Played Once Before</option>
+                                <option value="veteran">Veteran Player</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Preferred Role (Note: You will be randomly assigned):</label>
+                            <div class="radio-group">
+                                <div>
+                                    <input type="radio" id="human-pref" name="role-preference" 
+                                           value="human" checked>
+                                    <label for="human-pref">Human</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="zombie-pref" name="role-preference" 
+                                           value="zombie">
+                                    <label for="zombie-pref">Zombie</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="either-pref" name="role-preference" 
+                                           value="either">
+                                    <label for="either-pref">Either is fine</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gear">Equipment/Gear You Have:</label>
+                            <div class="checkbox-group">
+                                <div>
+                                    <input type="checkbox" id="blaster" name="gear" value="blaster">
+                                    <label for="blaster">Nerf Blaster</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="darts" name="gear" value="darts">
+                                    <label for="darts">Foam Darts</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="headband" name="gear" value="headband">
+                                    <label for="headband">Headband</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="sock" name="gear" value="sock">
+                                    <label for="sock">Sock (for tagging)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Agreements</legend>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="rules-agree" name="rules-agree" required>
+                            <label for="rules-agree">I have read and agree to follow all game rules</label>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="safety-agree" name="safety-agree" required>
+                            <label for="safety-agree">I agree to play safely and respect all campus policies</label>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="liability" name="liability" required>
+                            <label for="liability">I understand the risks involved and assume all liability</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Register Now</button>
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+
+                <div class="registration-info">
+                    <h3>What's Next?</h3>
+                    <ol>
+                        <li>Complete this registration form</li>
+                        <li>You'll receive a confirmation email with game details</li>
+                        <li>Gather your equipment (Nerf blaster, darts, headband)</li>
+                        <li>Show up at game day ready for action!</li>
+                        <li>Check the leaderboard to track your stats</li>
+                    </ol>
+
+                    <h3>Questions?</h3>
+                    <p>Contact the HVZ Moderators on the SUNY New Paltz student Discord or email hvz@newpaltz.edu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 HVZ at SUNY New Paltz. May the survivors prevail.</p>
+    </footer>
+</body>
+</html>
